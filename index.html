@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">
+<title>Gauss Data | Consultoria em Dados</title>
+<meta name="description" content="A Gauss Data transforma planilhas soltas e sistemas dispersos em dashboards, diagnósticos e automações de dados para operações do Rio Grande do Sul.">
+<meta name="theme-color" content="#050810">
+<link rel="canonical" href="https://gaussdata.com.br/">
+
+<!-- Meta tags de rastreamento -->
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+
+<!-- Open Graph / preview em WhatsApp e Instagram -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Gauss Data | Consultoria em Dados">
+<meta property="og:description" content="Do caos operacional ao dado que decide: dashboards, diagnósticos e automações construídos por quem também vive a rotina operacional.">
+<meta property="og:url" content="https://gaussdata.com.br/">
+<meta property="og:image" content="https://gaussdata.com.br/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gauss Data | Consultoria em Dados">
+<meta name="twitter:description" content="Do caos operacional ao dado que decide: dashboards, diagnósticos e automações construídos por quem também vive a rotina operacional.">
+<meta name="twitter:image" content="https://gaussdata.com.br/og-cover.png">
+
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Gauss Data",
+  "description": "Consultoria em dados: dashboards, diagnósticos e automações para operações críticas.",
+  "areaServed": "Rio Grande do Sul, Brasil",
+  "telephone": "+5551993368040",
+  "sameAs": ["https://instagram.com/gaussdata"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"O que é o Gauss Scan e quanto custa?","acceptedAnswer":{"@type":"Answer","text":"É um diagnóstico gratuito de maturidade de dados em seis pilares, com relatório em PDF, sem custo e sem compromisso."}},
+    {"@type":"Question","name":"Preciso ter um time de TI para contratar a Gauss Data?","acceptedAnswer":{"@type":"Answer","text":"Não. A Gauss Data cuida da estrutura, automação e manutenção; a maioria dos clientes ainda opera majoritariamente em planilhas."}},
+    {"@type":"Question","name":"Quanto tempo leva do diagnóstico até o painel funcionando, e meus dados ficam seguros?","acceptedAnswer":{"@type":"Answer","text":"O fluxo completo costuma ser conduzido em semanas, com prazo definido após entender as fontes de dados do cliente. Segurança e boas práticas fazem parte do processo desde o diagnóstico inicial."}},
+    {"@type":"Question","name":"Como sei que o diagnóstico realmente vai ajudar minha empresa?","acceptedAnswer":{"@type":"Answer","text":"Porque ele é baseado em metodologia testada em mais de 30 empresas e foi desenvolvido a partir de anos de experiência em operações reais. Você não precisa confiar em promessas — o diagnóstico mostra exatamente onde estão os problemas."}},
+    {"@type":"Question","name":"E se meu negócio for muito pequeno para isso?","acceptedAnswer":{"@type":"Answer","text":"O Gauss Scan foi desenhado para empresas de todos os tamanhos. Na verdade, negócios menores costumam ser os que mais ganham com automação, porque uma pessoa faz o trabalho que antes precisava de três."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- BARRA DE URGÊNCIA - Mais crível -->
+<div class="top-bar" style="background:linear-gradient(90deg,#1c39bb,#35d0f5);color:#fff;text-align:center;padding:8px 16px;font-size:13px;font-weight:500;position:relative;z-index:101;">
+    📅 Agenda desta semana com <strong>vagas limitadas</strong> para diagnóstico gratuito.
+</div>
+
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+
+<div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+
+<header id="site-header">
+  <nav>
+    <div class="brand">
+      <img src="assets/logo.png" alt="Gauss Data" width="24" height="24">
+      <span>GAUSS DATA</span>
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="#diagnostico" data-nav="diagnostico">Diagnóstico</a>
+      <a href="#resultados" data-nav="resultados">Resultados</a>
+      <a href="#servicos" data-nav="servicos">Serviços</a>
+      <a href="#faq" data-nav="faq">FAQ</a>
+      <a href="#contato" data-nav="contato">Contato</a>
+      <a href="https://wa.me/5551993368040?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Gauss%20Data%20e%20gostaria%20de%20receber%20meu%20diagn%C3%B3stico%20gratuito." class="nav-links-wa" target="_blank" rel="noopener">Falar no WhatsApp →</a>
+    </div>
+    <a href="https://wa.me/5551993368040?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Gauss%20Data%20e%20gostaria%20de%20receber%20meu%20diagn%C3%B3stico%20gratuito." class="nav-cta magnetic" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<section class="hero" id="main">
+  <canvas id="network-canvas"></canvas>
+  <div class="hero-spotlight" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow load-in" style="--d:0">Consultoria em dados · Operações críticas</div>
+      
+      <!-- HERO: Benefício primeiro, depois a dor -->
+      <h1 class="load-in" style="--d:1">
+        Descubra em <span class="grad">20 minutos</span> onde sua empresa perde tempo, dinheiro e produtividade.
+      </h1>
+      <p class="load-in" style="--d:2">
+        Empresas desperdiçam <strong>milhares de reais todos os meses</strong> por falta de dados confiáveis. Identificamos os gargalos e mostramos exatamente onde você pode automatizar, reduzir custos e tomar decisões melhores.
+      </p>
+
+      <!-- PROVA SOCIAL ANTES DO CTA -->
+      <div class="hero-proof load-in" style="--d:2; display:flex; gap:18px; flex-wrap:wrap; font-size:13px; color:var(--text-muted); margin-bottom:20px;">
+        <span>⭐ Mais de <strong>30 dashboards</strong> entregues</span>
+        <span>•</span>
+        <span>⏱ <strong>−22 horas/mês</strong> de trabalho manual</span>
+        <span>•</span>
+        <span>✔ <strong>GCM São Leopoldo</strong> · <strong>Rosa de Saron</strong></span>
+      </div>
+
+      <div class="cta-row load-in" style="--d:3">
+        <!-- CTA PRINCIPAL - Versão A (benefício) -->
+        <a href="https://wa.me/5551993368040?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Gauss%20Data%20e%20gostaria%20de%20receber%20meu%20diagn%C3%B3stico%20gratuito." class="btn btn-primary magnetic" target="_blank" rel="noopener">Receber meu diagnóstico gratuito →</a>
+        
+        <!-- CTA SECUNDÁRIO - Versão B (comentado para A/B testing)
+        <a href="https://wa.me/5551993368040?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Gauss%20Data%20e%20gostaria%20de%20receber%20meu%20diagn%C3%B3stico%20gratuito." class="btn btn-primary magnetic" target="_blank" rel="noopener">Quero meu diagnóstico gratuito →</a>
+        -->
+        
+        <a href="#resultados" class="btn btn-ghost magnetic">Ver resultados reais</a>
+      </div>
+
+      <!-- TEXTO DE SEGURANÇA ABAIXO DO CTA -->
+      <p class="cta-safe load-in" style="--d:3; font-size:13px; color:var(--text-dim); margin-top:12px;">
+        ✔ Sem custo • Sem compromisso • Atendimento direto pelo WhatsApp • Resposta em poucos minutos
+      </p>
+
+      <!-- FOTO DO FUNDADOR + SELO DE CONFIANÇA -->
+      <div class="founder-trust load-in" style="--d:4; display:flex; align-items:center; gap:14px; margin-top:20px; padding-top:20px; border-top:1px solid var(--line-soft);">
+        <img src="assets/founder.jpg" alt="Fundador da Gauss Data" style="width:44px; height:44px; border-radius:50%; object-fit:cover; border:2px solid var(--cyan-bright); flex-shrink:0;">
+        <div>
+          <p style="font-size:12.5px; color:var(--text-muted); margin:0; line-height:1.4;">
+            <strong style="color:var(--text-primary);">Diagnóstico conduzido por especialistas</strong><br>
+            <span style="font-size:11.5px; opacity:0.7;">+5 anos de experiência em dados operacionais</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-trust load-in" style="--d:4; margin-top:8px;">
+      </div>
+    </div>
+    <div class="hero-visual load-in" style="--d:4" aria-hidden="true">
+      <div class="dash-card dash-main tilt">
+        <div class="dash-head">
+          <span class="dash-label">Painel · Ocorrências</span>
+          <div class="dash-dots"><span></span><span></span><span></span></div>
+        </div>
+        <div class="dash-kpis">
+          <div class="dash-kpi"><div class="val">1.284</div><div class="lbl">Registros/mês</div></div>
+          <div class="dash-kpi"><div class="val cyan">98,6%</div><div class="lbl">Integridade</div></div>
+        </div>
+        <div class="dash-chart">
+          <svg viewBox="0 0 260 90" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#35d0f5" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="#35d0f5" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M0,64 L26,52 L52,58 L78,34 L104,40 L130,22 L156,30 L182,14 L208,20 L234,8 L260,16" fill="none" stroke="#35d0f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="dash-line"/>
+            <path class="dash-fill" d="M0,64 L26,52 L52,58 L78,34 L104,40 L130,22 L156,30 L182,14 L208,20 L234,8 L260,16 L260,90 L0,90 Z" fill="url(#chartFill)"/>
+          </svg>
+        </div>
+        <div class="dash-pillars">
+          <div class="lbl">Pilares · Gauss Scan</div>
+          <div class="pillar-row"><span class="pillar-name mono">Governança</span><span class="bar-track"><span class="bar-fill" style="width:82%"></span></span></div>
+          <div class="pillar-row"><span class="pillar-name mono">Qualidade</span><span class="bar-track"><span class="bar-fill" style="width:64%"></span></span></div>
+          <div class="pillar-row"><span class="pillar-name mono">Segurança</span><span class="bar-track"><span class="bar-fill" style="width:91%"></span></span></div>
+        </div>
+        <div class="dash-status">
+          <span class="txt"><span class="dot"></span>Sincronizado agora</span>
+          <span class="txt mono">v2.3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="proof-strip" aria-label="Resultados em produção">
+  <div class="wrap proof-inner">
+    <div class="proof-item"><span class="proof-num mono" data-counter data-target="30" data-suffix="+">0</span><span class="proof-lbl">PAINÉIS ENTREGUES NO RS</span></div>
+    <div class="proof-item"><span class="proof-num mono" data-counter data-target="20" data-suffix="+">0</span><span class="proof-lbl">AUTOMAÇÕES IMPLEMENTADAS</span></div>
+    <div class="proof-item"><span class="proof-num mono" data-counter data-target="22" data-suffix="h/mês">0</span><span class="proof-lbl">ECONOMIZADAS POR MÊS</span></div>
+    <div class="proof-item"><span class="proof-num mono">100%</span><span class="proof-lbl">CONFORMIDADE COM A LGPD</span></div>
+  </div>
+</section>
+
+<section id="diagnostico" class="diag-section mesh-1">
+  <div class="wrap">
+    <div class="diag-grid">
+      <div class="reveal">
+        <span class="eyebrow" style="margin-bottom:14px;">Gauss Scan · Diagnóstico gratuito</span>
+        <h2>Descubra exatamente onde sua empresa está perdendo dinheiro.</h2>
+        <p>Em aproximadamente 20 minutos mostramos:</p>
+        <ul style="list-style:none; margin-top:16px; display:flex; flex-direction:column; gap:10px; font-size:15px; color:var(--text-muted);">
+          <li>✔ Processos que podem ser automatizados</li>
+          <li>✔ Gargalos operacionais que geram desperdício</li>
+          <li>✔ Onde existem riscos e vulnerabilidades</li>
+          <li>✔ Como aumentar produtividade usando dados</li>
+        </ul>
+      </div>
+      <div class="diag-card reveal tilt">
+        <div class="dash-head">
+          <span class="dash-label">Você recebe</span>
+          <div class="dash-dots"><span></span><span></span><span></span></div>
+        </div>
+        <ul class="diag-receives">
+          <li><span class="check">✔</span> Mapa dos gargalos da sua operação</li>
+          <li><span class="check">✔</span> Nível de maturidade em dados</li>
+          <li><span class="check">✔</span> Recomendações práticas e próximos passos</li>
+        </ul>
+        <div class="offer-box" style="background:rgba(53,208,245,0.05); border-radius:12px; padding:16px; text-align:center; margin:8px 0;">
+          <span style="display:block; font-size:13px; color:var(--text-dim); text-decoration:line-through;">Valor normal: R$ 800</span>
+          <span style="display:block; font-size:20px; font-weight:700; color:var(--cyan-bright);">Hoje: GRATUITO</span>
+          <p style="font-size:12px; color:var(--text-dim); margin-top:6px;">Oferta válida para empresas que agendarem pelo WhatsApp</p>
+        </div>
+        <a href="https://wa.me/5551993368040?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Gauss%20Data%20e%20gostaria%20de%20receber%20meu%20diagn%C3%B3stico%20gratuito." class="btn btn-primary magnetic" target="_blank" rel="noopener" style="width:100%;justify-content:center;">Fazer diagnóstico gratuito agora →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="resultados" class="case-section mesh-1">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" style="margin-bottom:14px;">Casos reais · Operações em produção</span>
+      <h2>Veja o que acontece depois do diagnóstico.</h2>
+      <p>Todos os clientes abaixo começaram exatamente pelo diagnóstico gratuito.</p>
+    </div>
+
+    <!-- BLOCO DE ANTES E DEPOIS -->
+    <div class="before-after-block reveal" style="display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:48px; background:var(--bg-panel); border-radius:16px; padding:32px; border:1px solid var(--line);">
+      <div class="before">
+        <span style="display:block; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-dim); margin-bottom:16px;">ANTES DO DIAGNÓSTICO</span>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:10px; color:var(--text-muted); font-size:14px;">
+          <li>❌ Dados espalhados em múltiplas planilhas</li>
+          <li>❌ Horas perdidas em relatórios manuais</li>
+          <li>❌ Decisões sem dados confiáveis</li>
+        </ul>
+      </div>
+      <div class="after">
+        <span style="display:block; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--cyan-bright); margin-bottom:16px;">APÓS A GAUSS DATA</span>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:10px; color:var(--text-primary); font-size:14px;">
+          <li>✅ Dashboard único e automatizado</li>
+          <li>✅ Zero horas de compilação manual</li>
+          <li>✅ Decisões baseadas em dados</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="case-flow-banner reveal">Este cliente começou exatamente pelo diagnóstico gratuito.</p>
+    <div class="case-flow reveal" aria-hidden="true">
+      <span>Diagnóstico</span><span class="case-flow-arrow">→</span>
+      <span>Plano de ação</span><span class="case-flow-arrow">→</span>
+      <span>Dashboard</span><span class="case-flow-arrow">→</span>
+      <span>Automação</span><span class="case-flow-arrow">→</span>
+      <span>Resultados</span>
+    </div>
+
+    <div class="case-panels" id="case-panels">
+
+      <!-- ================= PAINEL 1 — GCM SÃO LEOPOLDO ================= -->
+      <div class="case-panel active" data-client="gcm" role="tabpanel">
+        <div class="case-card reveal tilt">
+          <div class="case-card-main">
+            <span class="case-tag mono">GCM São Leopoldo</span>
+            <h3>Painel de ocorrências, do registro bruto à decisão operacional</h3>
+            <p class="case-desc">Painel interno da GCM São Leopoldo, atualizado automaticamente. Fim da compilação manual: mais de 20.000 ocorrências já organizadas e acompanhadas por ele.</p>
+            <div class="case-stats">
+              <div class="case-stat">
+                <span class="case-stat-val mono" data-counter data-target="6" data-suffix="+">0</span>
+                <span class="case-stat-lbl">painéis em uso</span>
+              </div>
+              <div class="case-stat">
+                <span class="case-stat-val mono">20.000+</span>
+                <span class="case-stat-lbl">ocorrências organizadas pelo painel</span>
+              </div>
+              <div class="case-stat">
+                <span class="case-stat-val mono" data-counter data-target="20" data-suffix="h+">0</span>
+                <span class="case-stat-lbl">economizadas por mês, sem compilação manual</span>
+              </div>
+            </div>
+            <p class="case-note">* Case documentado a partir de operação real. Depoimento do gestor responsável pode ser incluído aqui mediante autorização.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= PAINEL 2 — ROSA DE SARON ================= -->
+      <div class="case-panel" data-client="rosa-saron" data-accent="violet" role="tabpanel" hidden>
+        <div class="case-card reveal tilt">
+          <div class="case-card-main">
+            <span class="case-tag mono">Rosa de Saron</span>
+            <h3>Instagram e vendas num só painel, sem precisar abrir cinco abas pra saber o que está funcionando</h3>
+            <p class="case-desc">Pedidos, estoque e Instagram viviam espalhados, sem cruzar dado pra saber o que realmente vendia. Hoje é um painel só, atualizado sozinho, com seguidores, vendas e ranking de produtos lado a lado.</p>
+            <div class="case-stats">
+              <div class="case-stat">
+                <span class="case-stat-val mono" data-counter data-target="109" data-suffix="%">0</span>
+                <span class="case-stat-lbl">de crescimento em seguidores no período</span>
+              </div>
+              <div class="case-stat">
+                <span class="case-stat-val mono">R$ 8.940</span>
+                <span class="case-stat-lbl">em receita só com o kit mais vendido</span>
+              </div>
+              <div class="case-stat">
+                <span class="case-stat-val mono" data-counter data-target="7" data-suffix="">0</span>
+                <span class="case-stat-lbl">categorias de produto acompanhadas num painel só</span>
+              </div>
+            </div>
+            <p class="case-note">* Case documentado a partir de operação real. Depoimento da gestora responsável pode ser incluído aqui mediante autorização.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ABAS DE CLIENTES -->
+    <div class="case-tabs reveal" id="case-tabs" role="tablist" aria-label="Selecionar cliente">
+      <button class="case-tab active" type="button" role="tab" aria-selected="true" data-client="gcm">GCM São Leopoldo</button>
+      <button class="case-tab" type="button" role="tab" aria-selected="false" data-client="rosa-saron">Rosa de Saron</button>
+    </div>
+
+    <div class="mid-cta reveal">
+      <h3>Quer descobrir isso na sua empresa?</h3>
+      <p>Solicite gratuitamente uma análise personalizada.</p>
+      <a href="https://wa.me/5551993368040?text=Ol%C3%A1%2C%20quero%20receber%20meu%20diagn%C3%B3stico" class="btn btn-primary magnetic" target="_blank" rel="noopener">Receber diagnóstico →</a>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="servicos">
+  <div class="wrap">
+    <div class="section-head right reveal">
+      <h2>O que resolve o que o diagnóstico encontrar</h2>
+      <p>Quatro frentes que cobrem o ciclo inteiro do dado: do diagnóstico à decisão automática.</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card wide reveal tilt scan-card">
+        <div class="scan-card-body">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#35d0f5" stroke-width="1.6"/><path d="M20 20l-4.5-4.5" stroke="#35d0f5" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <h3>Gauss Scan</h3>
+          <p>Diagnóstico estruturado de maturidade de dados em seis pilares, com relatório em PDF pronto para apresentar à gestão.</p>
+          <span class="tag">Produto principal</span>
+        </div>
+        <div class="scan-report" aria-hidden="true">
+          <div class="scan-report-head"><span></span><span></span><span></span></div>
+          <div class="scan-score">
+            <svg viewBox="0 0 60 60">
+              <circle cx="30" cy="30" r="26" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="5"/>
+              <circle cx="30" cy="30" r="26" fill="none" stroke="#35d0f5" stroke-width="5" stroke-linecap="round" stroke-dasharray="163" stroke-dashoffset="34" transform="rotate(-90 30 30)"/>
+            </svg>
+            <span class="scan-score-val">79</span>
+          </div>
+          <div class="scan-report-line" style="width:88%"></div>
+          <div class="scan-report-line" style="width:64%"></div>
+          <div class="scan-report-line" style="width:72%"></div>
+        </div>
+      </div>
+      <div class="service-card reveal tilt">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="12" width="4" height="9" rx="1" stroke="#35d0f5" stroke-width="1.6"/><rect x="10" y="6" width="4" height="15" rx="1" stroke="#35d0f5" stroke-width="1.6"/><rect x="17" y="9" width="4" height="12" rx="1" stroke="#35d0f5" stroke-width="1.6"/></svg>
+        <h3>Dashboards operacionais</h3>
+        <p>Pare de copiar informações entre planilhas: indicadores que se atualizam sozinhos e mostram o que realmente importa.</p>
+      </div>
+      <div class="service-card reveal tilt">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" stroke="#35d0f5" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <h3>Segurança &amp; auditoria</h3>
+        <p>Descubra antes de alguém de fora: exposições de dados e vulnerabilidades em sistemas públicos e internos.</p>
+      </div>
+      <div class="service-card wide reveal tilt">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 0114-5.3M20 12a8 8 0 01-14 5.3" stroke="#35d0f5" stroke-width="1.6" stroke-linecap="round"/><path d="M18 4v4h-4M6 20v-4h4" stroke="#35d0f5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Automação de relatórios</h3>
+        <p>Descubra por que sua empresa perde horas todos os meses com processos manuais — e deixe scripts cuidarem disso por você.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final" id="scan">
+  <div class="wrap">
+    <div class="cta-final-grid">
+      <div class="reveal">
+        <h2>Sua empresa pode estar desperdiçando tempo e dinheiro todos os dias.</h2>
+        <p>Descubra gratuitamente onde isso acontece e receba um plano de ação personalizado.</p>
+        <div style="font-size:13px; color:var(--text-dim); margin-bottom:20px;">
+          Leva cerca de 20 minutos. Sem compromisso.
+        </div>
+        <div class="cta-row">
+          <a href="https://wa.me/5551993368040?text=Ol%C3%A1%2C%20quero%20come%C3%A7ar%20pelo%20Gauss%20Scan" class="btn btn-primary magnetic">Receber meu diagnóstico gratuito →</a>
+        </div>
+      </div>
+      <form class="lead-form reveal tilt" id="lead-form" novalidate>
+        <div class="lead-form-head">
+          <span class="dash-label">Solicite seu diagnóstico gratuito</span>
+          <div class="dash-dots"><span></span><span></span><span></span></div>
+        </div>
+        <div class="lead-field">
+          <label for="lead-name">Nome</label>
+          <input type="text" id="lead-name" name="name" autocomplete="name" placeholder="Seu nome" required>
+          <span class="lead-error" data-error-for="lead-name"></span>
+        </div>
+        <div class="lead-field">
+          <label for="lead-phone">WhatsApp</label>
+          <input type="tel" id="lead-phone" name="phone" autocomplete="tel" inputmode="numeric" maxlength="16" placeholder="(51) 9XXXX-XXXX" required>
+          <span class="lead-error" data-error-for="lead-phone"></span>
+        </div>
+        <button type="submit" class="btn btn-primary magnetic lead-submit">
+          <span class="lead-submit-label">Receber análise no WhatsApp →</span>
+        </button>
+        <p class="lead-hint">Gratuito e sem compromisso. Abrimos o WhatsApp com sua mensagem pronta — seus dados não são compartilhados com terceiros.</p>
+        <div class="lead-success">
+          <div class="lead-success-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#35d0f5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>Prontinho, <span id="lead-success-name">tudo certo</span>!</h4>
+          <p>Abrimos o WhatsApp numa nova aba com sua mensagem pronta. Se não abriu, <a href="#" id="lead-fallback-link" target="_blank" rel="noopener" style="color:var(--cyan-bright);">clique aqui</a>.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq-section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Perguntas frequentes</h2>
+      <p>O que quem está decidindo pela Gauss Data mais pergunta antes de fechar.</p>
+    </div>
+    <div class="faq-list reveal" id="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>O que é o Gauss Scan e quanto custa?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <p>É um diagnóstico gratuito de maturidade de dados em seis pilares. Você recebe um relatório em PDF com nota, pontos de atenção e recomendações, sem custo e sem compromisso.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Preciso ter um time de TI para contratar a Gauss Data?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <p>Não. A maioria dos nossos clientes ainda opera majoritariamente em planilhas, sem equipe técnica dedicada. Cuidamos da estrutura, automação e manutenção; sua equipe só usa o painel.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Quanto tempo leva, e meus dados ficam seguros?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <p>O fluxo completo costuma ser conduzido em semanas, não meses, com prazo definido na conversa inicial. Segurança e boas práticas fazem parte do processo desde o diagnóstico, não são um item avulso adicionado depois.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Como sei que o diagnóstico realmente vai ajudar minha empresa?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <p>Porque ele é baseado em metodologia testada em mais de 30 empresas e foi desenvolvido a partir de anos de experiência em operações reais. Você não precisa confiar em promessas — o diagnóstico mostra exatamente onde estão os problemas.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>E se meu negócio for muito pequeno para isso?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a">
+          <p>O Gauss Scan foi desenhado para empresas de todos os tamanhos. Na verdade, negócios menores costumam ser os que mais ganham com automação, porque uma pessoa faz o trabalho que antes precisava de três.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO DE REDUÇÃO DE OBJEÇÕES ANTES DO FOOTER -->
+    <div class="objection-block reveal" style="margin-top:48px; padding:32px; background:var(--bg-panel); border-radius:16px; border:1px solid var(--line); text-align:center;">
+      <h3 style="font-size:18px; margin-bottom:16px;">Ainda em dúvida?</h3>
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:12px 24px; font-size:14px; color:var(--text-muted);">
+        <span>✔ Não precisa trocar de sistema</span>
+        <span>✔ Não precisa contratar software</span>
+        <span>✔ Sem compromisso</span>
+        <span>✔ Recomendações práticas</span>
+        <span>✔ Atendimento personalizado</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/5551993368040?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Gauss%20Data%20e%20gostaria%20de%20receber%20meu%20diagn%C3%B3stico%20gratuito." class="wa-float" id="wa-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp com a Gauss Data">
+  <span class="wa-float-ring" aria-hidden="true"></span>
+  <span class="wa-float-icon" aria-hidden="true">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M20.5 3.5A11 11 0 003.7 17.2L2 22l4.9-1.6A11 11 0 1020.5 3.5z" fill="#04101f"/>
+      <path d="M17.1 14.4c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4z" fill="#04101f"/>
+    </svg>
+  </span>
+  <span class="wa-float-label" id="wa-float-label">Diagnóstico Gratuito</span>
+</a>
+
+<footer id="contato">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-about">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Gauss Data" width="22" height="22">
+          <span>GAUSS DATA</span>
+        </div>
+        <p>Consultoria em dados para operações que não podem parar. Diagnóstico, dashboards e automação, construídos por quem vive a rotina.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <a href="#servicos">Serviços</a>
+        <a href="#scan">Gauss Scan</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <a href="https://instagram.com/gaussdata" target="_blank" rel="noopener">@gaussdata</a>
+        <a href="https://wa.me/5551993368040?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Gauss%20Data%20e%20gostaria%20de%20receber%20meu%20diagn%C3%B3stico%20gratuito." target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="copy mono">© 2026 Gauss Data</span>
+      <span class="copy">Rio Grande do Sul, Brasil</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
