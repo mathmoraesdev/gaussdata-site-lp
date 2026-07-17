@@ -355,7 +355,23 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 3
   display:block;font-size:10px;color:var(--text-dim);text-align:right;margin-top:7px;
 }
 @media(max-width:480px){
-  .phone-mock{width:100%;max-width:320px;}
+  .phone-mock{max-width:230px;padding:9px;border-radius:32px;}
+  .phone-screen{border-radius:24px;min-height:400px;}
+  .phone-notch{width:64px;height:16px;top:7px;}
+  .phone-chat-head{padding:26px 13px 11px;gap:8px;}
+  .phone-chat-avatar{width:28px;height:28px;font-size:11px;}
+  .phone-chat-name{font-size:11px;}
+  .phone-chat-status{font-size:9px;}
+  .phone-chat-body{padding:12px 10px 14px;gap:9px;}
+  .phone-bubble{padding:9px;}
+  .phone-bubble-text{font-size:10.5px;padding:8px 10px;}
+  .phone-bubble-doc{padding:10px;}
+  .phone-bubble-doc-label{font-size:8.5px;}
+  .phone-bubble-doc-file{font-size:8.5px;margin-top:9px;padding-top:8px;}
+  .phone-bubble-time{font-size:8px;margin-top:5px;}
+  .phone-mock .scan-score{width:38px !important;height:38px !important;}
+  .phone-mock .scan-score-val{font-size:10px !important;}
+  .phone-mock .pillar-name{width:48px !important;font-size:8.5px !important;}
 }
 
 .load-in{
