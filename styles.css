@@ -384,6 +384,18 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 3
   to{opacity:1;transform:translateY(0);}
 }
 
+/* Entrada própria do mockup de celular — "materializa" em vez do fade simples do texto */
+@keyframes phoneReveal{
+  0%{opacity:0;transform:translateY(46px) scale(0.86) rotate(-3deg);}
+  55%{opacity:1;}
+  100%{opacity:1;transform:translateY(0) scale(1) rotate(0deg);}
+}
+.hero-visual.load-in{
+  animation-name:phoneReveal;
+  animation-duration:1.15s;
+  transform-origin:center bottom;
+}
+
 .proof-strip{padding:36px 0;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);}
 .proof-inner{display:flex;justify-content:center;align-items:center;gap:56px;flex-wrap:wrap;}
 .proof-item{display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;}
