@@ -255,7 +255,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 3
 }
 .btn-ghost:hover{border-color:var(--cyan-bright);}
 
-.hero-visual{position:relative;height:440px;}
+.hero-visual{position:relative;height:440px;min-width:0;}
 .dash-card{
   background:linear-gradient(180deg, rgba(14,23,48,0.75), rgba(11,18,36,0.75));
   border:1px solid var(--line);
@@ -294,7 +294,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:20px 3
 
 /* ===== MOCKUP DE CELULAR (HERO) ===== */
 .phone-mock{
-  width:320px;margin:0 auto;
+  width:100%;max-width:320px;margin:0 auto;
   background:#04060c;
   border:1px solid var(--line);
   border-radius:42px;
