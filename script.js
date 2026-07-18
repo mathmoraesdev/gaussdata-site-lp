@@ -650,20 +650,10 @@
      17. BOTÃO FLUTUANTE DO WHATSAPP
   ========================================================= */
   const waFloat = document.getElementById('wa-float');
-  const waFloatLabel = document.getElementById('wa-float-label');
   if (waFloat && hero) {
-    let waLabelSwapped = false;
-    let waLabelTimer = null;
     const waFloatIO = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        const nowVisible = !entry.isIntersecting;
-        waFloat.classList.toggle('visible', nowVisible);
-        if (nowVisible && !waLabelSwapped && waFloatLabel && !waLabelTimer) {
-          waLabelTimer = setTimeout(() => {
-            waFloatLabel.textContent = 'Receber análise gratuita →';
-            waLabelSwapped = true;
-          }, 4000);
-        }
+        waFloat.classList.toggle('visible', !entry.isIntersecting);
       });
     }, { threshold: 0 });
     waFloatIO.observe(hero);
