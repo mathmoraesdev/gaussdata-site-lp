@@ -1234,6 +1234,10 @@
     const panels = Array.from(panelsWrap.querySelectorAll('.case-panel'));
 
     function lockPanelsHeight() {
+      if (window.matchMedia('(max-width: 600px)').matches) {
+        panelsWrap.style.minHeight = '';
+        return;
+      }
       let max = 0;
       panels.forEach(panel => {
         const wasHidden = panel.hidden;
