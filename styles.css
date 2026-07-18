@@ -1038,6 +1038,13 @@ footer .wrap{position:relative;z-index:1;}
   text-align:center;
   margin:8px 0;
 }
+.btn-diag-cta{
+  width:100%;justify-content:center;white-space:nowrap;
+  padding-left:10px;padding-right:10px;
+}
+@media(max-width:420px){
+  .btn-diag-cta{font-size:12.5px;padding-left:6px;padding-right:6px;}
+}
 .offer-box .old-price{
   display:block;
   font-size:13px;
